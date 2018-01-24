@@ -14,7 +14,7 @@ Just import the scripts into your project! Optionally call `astar_allow_diagonal
 ##### `astar_find_path(grid, start_x, start_y, end_x, end_y)` 
 Returns a ds_list of positions. Positions are stored as arrays [x, y]. A grid is expected to be filled with `1`s and `0`s. `start_x`, `start_y`, `end_x`, `end_y` are all expected to be **grid positions** not pixel positions.
 
-To customize what `0` and `1` mean as far as if a grid space is available or taken use the passable script functions
+To customize what `0` and `1` mean as far as if a grid space is available or taken ( or to add different numbers to your grid )  use the passable script functions. This script will receive the `value` of the grid position to be checked. Return true or false.
 
 ##### `astar_allow_diagonal(boolean)`
 Allows or disables diagonal checks in pathfinding. True by default
