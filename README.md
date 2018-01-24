@@ -16,9 +16,13 @@ Returns a ds_list of positions. Positions are stored as arrays [x, y]. A grid is
 
 To customize what `0` and `1` mean as far as if a grid space is available or taken use the passable script functions
 
-#### `astar_allow_diagonal(boolean)`
+##### `astar_allow_diagonal(boolean)`
 Allows or disables diagonal checks in pathfinding. True by default
 
 
-#### `astar_set_passable_script(script_index)`
+##### `astar_set_passable_script(script_index)`
 Sets the script used to check if a grid celll is passable - not required. Take a look at the default `astar_is_passable` script for implementation details.
+
+
+## Special Thanks
+ - Xot & Leif902 for `ds_list_flip` http://www.gmlscripts.com/script/ds_list_flip
