@@ -1,8 +1,8 @@
 if(mouse_check_button_pressed(mb_left)){
 	target_x = mouse_x div World.cell_size;
 	target_y = mouse_y div World.cell_size;
-	var _x = floor(x / World.cell_size),	
-		_y = floor(y / World.cell_size);
+	var _x = floor((x + sprite_width/2) / World.cell_size),	
+		_y = floor((y + sprite_height/2) / World.cell_size);
 	
 	ds_list_destroy(paths);
 	paths = astar_find_path(World.grid, _x, _y, target_x, target_y);
